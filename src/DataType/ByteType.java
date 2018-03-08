@@ -1,5 +1,7 @@
 package DataType;
 
+import java.math.BigDecimal;
+
 /**
  * Created by knbsyoo on 2018/2/28
  * Description: 熟悉Byte数据类型及
@@ -22,10 +24,11 @@ public class ByteType {
         String maxStr = max.toString();
         out("maxStr=" + maxStr );
         byte byte1 = -1;
-        Byte test1  = Byte.valueOf(byte1);//valueOf()方法调用ByteCache 内部私有类，初始化Byte数组，范围-128-127，可以直接读取。
+        //valueOf()方法调用ByteCache 内部私有类，初始化Byte数组，范围-128-127，可以直接从类内部获取Byte对象。
+        Byte test1  = Byte.valueOf(byte1);
         out("test1：" + test1);
         try {
-            Byte test2 = Byte.parseByte("123");
+            Byte test2 = Byte.parseByte("123");//parseByte()返回byte类型，byte自动装箱转换为Byte。
             out("test2：" + test2);
         }catch (NumberFormatException e){
             out("get a NumberFormatException at line 28");
