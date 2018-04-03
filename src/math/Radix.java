@@ -1,13 +1,13 @@
-package Math;
+package math;
 
-import Util.Out;
+import util.Out;
 
 /**
  * Created by knbsyoo on 2018/3/9
  * Description JDK1.7新特性 用二进制来表示整数（byte,short,int和long）
  */
 public class Radix {
-    public static void main(String[] agrs){
+    public static void test(){
         //java中的整数，像：1，2，234，1000等默认都是int类型的，在-128~+127范围内的值可以直接赋值给byte类型，自动识别为byte，同理，在-32768~+32767之间值也可以直接赋值给short
         byte t1 = 0b01111111;//127,未指定类型，默认为int类型，0b01111111，缺省位默认填充0，实际上为：0b00000000000000000000000001111111
         byte t1a = 0b00000000000000000000000001111111;//127

@@ -1,14 +1,14 @@
-package Math;
+package math;
 
-import Util.Out;
+import util.Out;
 
 /**
  * Created by knbsyoo on 2018/3/15
  * Description：位移运算
  * 数据存储在内存中都是以二进制表示的，JDK自带的一些方法的实现含有位移运算，所以必须了解位运算。
  */
-public class ByteMath {
-    public static void main(String args[]){
+public class BitMath {
+    public static void test(){
         //以32位为例子，Java声明的为原码，进行位运算。
         int t1 = 0b00000000000000000000000000001011;
         int t2 = 0B01111111111111111111111111111111;

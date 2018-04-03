@@ -1,6 +1,6 @@
-package Math;
+package math;
 
-import Util.Out;
+import util.Out;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * Description
  */
 public class MathTest {
-    public static void main(String[] args){
+    public static void test(){
         Double t1 = 100d;
 //        Double t2 = (t1*100)/100;
 //        Out.println("t2：" + t2);

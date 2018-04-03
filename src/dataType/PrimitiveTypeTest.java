@@ -1,13 +1,13 @@
-package DataType;
+package dataType;
 
-import Util.Out;
+import util.Out;
 
 /**
  * Created by knbsyoo on 2018/3/19
  * Description 基础数据类型的包装类一览
  */
 public class PrimitiveTypeTest {
-    public static void main(String[] args){
+    public static void test(){
         //byte
         Out.println("基本类型：byte 二进制位数：" + Byte.SIZE);
         Out.println("包装类：java.lang.Byte");

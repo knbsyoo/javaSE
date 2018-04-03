@@ -1,15 +1,11 @@
-package DataType;
-
-import java.math.BigDecimal;
+package dataType;
 
 /**
  * Created by knbsyoo on 2018/2/28
  * Description: 熟悉Byte数据类型及
  */
 public class ByteType {
-
-
-    public static void main(String[] args){
+    public static void test(){
         //Byte8位，第一位为符号位。
         Byte max = Byte.MAX_VALUE;//01111111-> 127
         out("Byte最大值：" + max);
