@@ -6,6 +6,6 @@ import object.ObjectTest;
  */
 public class Main {
     public static void main(String[] args) {
-        MapTest.test();
+        IntegerType.test();
     }
 }
