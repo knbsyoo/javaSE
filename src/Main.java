@@ -1,6 +1,6 @@
 import Map.MapTest;
-import dataType.ByteType;
 import dataType.IntegerType;
+import dataType.ShortDemo;
 import math.BitMath;
 import object.ObjectTest;
 /**
@@ -8,7 +8,7 @@ import object.ObjectTest;
  */
 public class Main {
     public static void main(String[] args) {
-        ByteType.test();
+        ShortDemo.test();
 
     }
 }

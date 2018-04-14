@@ -1,10 +1,11 @@
 package dataType;
 
 /**
+ * ByteDemo
  * Created by knbsyoo on 2018/2/28
  * 解析笔记：https://blog.csdn.net/qq_21397851/article/details/79900658
  */
-public class ByteType {
+public class ByteDemo {
     public static void test(){
         //Byte声明
         byte byte1 = 1;
