@@ -39,8 +39,18 @@ public class ShortDemo {
         Short s8 = Short.reverseBytes(s7);
         Out.println(s8);//512
         //负数
-        short s_3 = (short)-0B000000000000011;//符号位直接使用符号替代，声明使用原码，运算时候使用补码，根据运算结果得出补码，再转为原码
+        short s_3 = (short)-0B000000000000011;
         short s_4 = (short)-0B000001000000001;
         Out.println(s_4 == Short.reverseBytes(s_3));//true
+        Out.println(s_4 );
+        Integer i = 0B11111111111111111111111111111101;
+        Short s_5 = i.shortValue();//去掉前面16位
+        Out.println("i:" + i);
+        //属性
+        Out.println("MAX:" + Short.MAX_VALUE);
+        Out.println("MIN:" + Short.MIN_VALUE);
+        Out.println("BYTES:" + Short.BYTES);
+        Out.println("bit size:" + Short.SIZE);
+        Out.println("primitive type:" + Short.TYPE);
     }
 }
