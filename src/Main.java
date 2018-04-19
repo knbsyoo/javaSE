@@ -1,4 +1,5 @@
 import Map.MapTest;
+import dataType.DateDemo;
 import dataType.IntegerDemo;
 import dataType.ShortDemo;
 import math.BitMath;
@@ -8,7 +9,7 @@ import object.ObjectTest;
  */
 public class Main {
     public static void main(String[] args) {
-        IntegerDemo.test();
+        DateDemo.test();
 
     }
 }
