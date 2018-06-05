@@ -1,4 +1,6 @@
 import Map.MapTest;
+import Radix.BinaryDemo;
+import collection.SortDemo;
 import dataType.DateDemo;
 import dataType.IntegerDemo;
 import dataType.ShortDemo;
@@ -11,6 +13,7 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        ReflectDemo.test();
+        SortDemo demo = new SortDemo();
+        demo.test();
     }
 }
