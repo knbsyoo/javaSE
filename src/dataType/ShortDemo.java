@@ -29,10 +29,10 @@ public class ShortDemo {
         Out.println(s6.toString());//33
         Out.println(Short.toString(s6.shortValue()));//33
         Out.println(s6.hashCode());//33
-        Out.println(Short.toUnsignedInt(s_1));//1
-        Out.println(Short.toUnsignedInt(s_2));//65535
-        Out.println(Short.toUnsignedLong(s_1));//1
-        Out.println(Short.toUnsignedLong(s_2));//65535
+//        Out.println(Short.toUnsignedInt(s_1));//1
+//        Out.println(Short.toUnsignedInt(s_2));//65535
+//        Out.println(Short.toUnsignedLong(s_1));//1
+//        Out.println(Short.toUnsignedLong(s_2));//65535
         Out.println(s4.equals(s1));//true
         //高位低位反转 正数
         Short s7 = 2;
@@ -49,7 +49,7 @@ public class ShortDemo {
         //属性
         Out.println("MAX:" + Short.MAX_VALUE);
         Out.println("MIN:" + Short.MIN_VALUE);
-        Out.println("BYTES:" + Short.BYTES);
+//        Out.println("BYTES:" + Short.BYTES);
         Out.println("bit size:" + Short.SIZE);
         Out.println("primitive type:" + Short.TYPE);
     }

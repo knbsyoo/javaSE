@@ -3,7 +3,9 @@ package dataType;
 
 import util.Out;
 
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Description 时间日期类
@@ -11,11 +13,15 @@ import java.sql.Date;
 public class DateDemo {
     public static void test(){
         //java.sql.Date 和 java.util.Date
-        java.util.Date d1 = new java.util.Date();
-        java.sql.Date d2 = new Date(d1.getTime());
-        Out.println("d1:" + d1.toString());
-        Out.println("d2:" + d2.toString());
+//        java.util.Date d1 = new java.util.Date();
+//        java.sql.Date d2 = new Date(d1.getTime());
+//        Out.println("d1:" + d1.toString());
+//        Out.println("d2:" + d2.toString());
         Out.println(addDate(-1));
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MONTH,-11);
+        calendar.set(Calendar.DAY_OF_MONTH,1);
+        new SimpleDateFormat("yyyyMMdd").format(calendar.getTime());
     }
 
 

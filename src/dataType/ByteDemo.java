@@ -34,10 +34,10 @@ public class ByteDemo {
         Byte.decode("0x8");//8
         b4.equals(b2);//true
         byte byte2 = -1;
-        Byte.toUnsignedInt(byte1);//1
-        Byte.toUnsignedLong(byte1);//1
-        Byte.toUnsignedInt(byte2);//255 强转为int的-1，-1的二进制补码：1111,1111,1111,1111,1111,1111,1111,1111，进行& 0xff，截取byte表示8位以外的其他高位。
-        Byte.toUnsignedLong(byte2);//255
+//        Byte.toUnsignedInt(byte1);//1
+//        Byte.toUnsignedLong(byte1);//1
+//        Byte.toUnsignedInt(byte2);//255 强转为int的-1，-1的二进制补码：1111,1111,1111,1111,1111,1111,1111,1111，进行& 0xff，截取byte表示8位以外的其他高位。
+//        Byte.toUnsignedLong(byte2);//255
     }
 
     private static void out(Object o){

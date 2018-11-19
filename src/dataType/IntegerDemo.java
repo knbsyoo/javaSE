@@ -15,18 +15,18 @@ public class IntegerDemo {
         Integer a3 = 0b10000000000000000000000000000001;
         Integer a4 = 0b10000000000000000000000000000011;
         Integer a5 = 0B00000000000000000000000000000000;
-        int r1 = Integer.compareUnsigned(a1.intValue(),a2.intValue());
-        int r2 = Integer.compareUnsigned(a1.intValue(),a3.intValue());
-        int r3 = Integer.compareUnsigned(a3.intValue(),a4.intValue());
+//        int r1 = Integer.compareUnsigned(a1.intValue(),a2.intValue());
+//        int r2 = Integer.compareUnsigned(a1.intValue(),a3.intValue());
+//        int r3 = Integer.compareUnsigned(a3.intValue(),a4.intValue());
         Out.println("a1,a2,a3,a4,a5：" + a1 +"," + a2 + "," + a3 + "," + a4 + ",a5:" + a5);
-        Out.println("r1,r2,r3：" + r1 +"," + r2 + "," + r3);
+//        Out.println("r1,r2,r3：" + r1 +"," + r2 + "," + r3);
 
         //init method
         Out.println(Integer.numberOfLeadingZeros(a1));
         Out.println(Integer.numberOfLeadingZeros(a3));
         Integer a11 = 3;
         Integer a6 = Integer.parseInt("11",2);
-        Integer a7 = Integer.parseUnsignedInt("80000000",16);
+//        Integer a7 = Integer.parseUnsignedInt("80000000",16);
         Integer a9 = Integer.valueOf(3);
         Integer a10 = new Integer(3);
         boolean b1 = a6==a9;//true

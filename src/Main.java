@@ -4,6 +4,7 @@ import collection.SortDemo;
 import dataType.DateDemo;
 import dataType.IntegerDemo;
 import dataType.ShortDemo;
+import expection.ExpectionDemo;
 import math.BitMath;
 import object.ObjectTest;
 import reflect.ReflectDemo;
@@ -13,7 +14,6 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        SortDemo demo = new SortDemo();
-        demo.test();
+        MapTest.testNullOrEmpty();
     }
 }
