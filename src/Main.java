@@ -14,6 +14,6 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        MapTest.testNullOrEmpty();
+        MapTest.testNullMap();
     }
 }

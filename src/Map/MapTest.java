@@ -49,4 +49,11 @@ public class MapTest {
             Out.println("1:OK");
         }
     }
+
+    public static void testNullMap(){
+        HashMap map = null;
+        if(!map.containsKey("a")){
+            Out.println("1:OK");
+        }
+    }
 }
