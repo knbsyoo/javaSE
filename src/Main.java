@@ -1,5 +1,6 @@
 import Map.MapTest;
 import Radix.BinaryDemo;
+import collection.ListDemo;
 import collection.SortDemo;
 import dataType.DateDemo;
 import dataType.IntegerDemo;
@@ -14,6 +15,6 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        MapTest.testNullMap();
+        ListDemo.listSort();
     }
 }
