@@ -2,9 +2,7 @@ import Map.MapTest;
 import Radix.BinaryDemo;
 import collection.ListDemo;
 import collection.SortDemo;
-import dataType.DateDemo;
-import dataType.IntegerDemo;
-import dataType.ShortDemo;
+import dataType.*;
 import expection.ExpectionDemo;
 import math.BitMath;
 import object.ObjectTest;
@@ -15,6 +13,6 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        ListDemo.listSort();
+        StringDemo.testSub();;
     }
 }

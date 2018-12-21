@@ -33,4 +33,19 @@ public class DateDemo {
     public static java.sql.Date addDate(int mun){
         return new java.sql.Date(new java.util.Date().getTime() + mun*1000*3600*24);
     }
+
+    public static void testMonth(){
+        Date now = new Date();
+        for(int i=-12; i < 0; i++){
+            String month = stepMonth(now, i);
+            Out.println(month);
+        }
+    }
+    public static String stepMonth(Date sourceDate, int month) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyyMM");
+        Calendar c = Calendar.getInstance();
+        c.setTime(sourceDate);
+        c.add(Calendar.MONTH, month);
+        return format.format(c.getTime());
+    }
 }
