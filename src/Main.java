@@ -13,6 +13,6 @@ import reflect.ReflectDemo;
  */
 public class Main {
     public static void main(String[] args) {
-        StringDemo.ageRange();
+     DateDemo.getYesterday();
     }
 }

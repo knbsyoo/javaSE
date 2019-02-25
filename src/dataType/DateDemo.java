@@ -48,4 +48,11 @@ public class DateDemo {
         c.add(Calendar.MONTH, month);
         return format.format(c.getTime());
     }
+
+
+    public static String getYesterday(){
+        String yesterday =  new SimpleDateFormat("yyyyMMdd").format(new Date(new Date().getTime() - 24*60*60*1000));
+        Out.println(yesterday);
+        return yesterday;
+    }
 }

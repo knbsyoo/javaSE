@@ -100,4 +100,33 @@ public class ListDemo {
             Out.println(p.toString());
         }
     }
+
+    public static void bean2List(){
+        Person p1 = new Person("张三", "男");
+        Person p2 = new Person("张三1", "男");
+        Person p3 = new Person("张三2", "男");
+        Person p4 = new Person("张三3", "男");
+
+        Person p6 = new Person("黄奕", "女");
+        Person p7 = new Person("黄奕", "女");
+        Person p8 = new Person("黄奕", "女");
+        Person p9 = new Person("黄奕", "女");
+        Person p10 = new Person("黄奕", "女");
+
+        List<Person> list = new ArrayList<Person>();
+        list.add(p1);
+        list.add(p2);
+        list.add(p3);
+        list.add(p4);
+        list.add(p6);
+        list.add(p7);
+        list.add(p8);
+        list.add(p9);
+        list.add(p10);
+
+        List<String> dicts = new ArrayList<>();
+        dicts.add("男");
+        dicts.add("女");
+        Map result = new HashMap();
+    }
 }
