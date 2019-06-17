@@ -46,5 +46,6 @@ public class finalDemo {
     }
     public void fianlParams2(final Value i){
 //        i = new Value(12);//compilation error: can not assign a value to final variable "i"
+//        java.net.URL
     }
 }

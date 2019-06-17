@@ -1,7 +1,10 @@
 package Map;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import util.Out;
 
+import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -55,5 +58,40 @@ public class MapTest {
         if(!map.containsKey("a")){
             Out.println("1:OK");
         }
+    }
+
+    public static void testObjectMap(){
+        HashMap<String , Object> map = new HashMap<>();
+        map.put("age", 22);
+        map.put("name","xiaoMing");
+        JSONObject jsonObject = JSONObject.parseObject(JSON.toJSON(map).toString());
+        Person person = JSONObject.toJavaObject(jsonObject, Person.class);
+        Out.print(person.toString());
+    }
+
+    public static class  Person{
+        private String name;
+        private Integer age;
+
+        public String getName() {
+            return name;
+        }
+
+        public Integer getAge() {
+            return age;
+        }
+
+        public void setAge(Integer age) {
+            this.age = age;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString(){
+            return "name:" + this.name + ",age:"+ this.age;
+         }
     }
 }
